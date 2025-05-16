@@ -282,6 +282,15 @@
         </path>
         <rect x="10" y="475.571" fill="#fefae9" width="180" height="4" />
       </svg>
+      <audio id="audio" src="Gunny - DDTank - Lobby Theme.mp3" preload="auto"></audio>
+      <script>
+    setTimeout(() => {
+      const audio = document.getElementById("audio");
+      audio.play().catch(error => {
+        console.warn("Audio không thể tự động phát:", error);
+      });
+    }, 6500);
+  </script>
       <div class="text">07/11/2005</div>
       <p class="name">Alles Gute Zums Lovie</p>
       </div>
